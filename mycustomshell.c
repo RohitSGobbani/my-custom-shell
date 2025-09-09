@@ -47,27 +47,7 @@ int main(){
       if(*input){
         add_history(input);
       }
-      
-      // //for ctrl+d
-      // if(fgets(input,sizeof(input),stdin) == NULL){
-      //   break;
-      // }
-
-      // input[strcspn(input,"\n")] = '\0';
-
-      // //history
-      // if(history_count < MAX_HISTORY){
-      //   if(!(strcmp(input,"") == 0)){
-      //     history[history_count] = strdup(input);
-      //     history_count++;
-      //   }
-      // }
-
-      // if(strcmp(input,"history") == 0){
-      //   for(int i = 0; i<history_count; i++){
-      //     printf("%d %s\n", i+1, history[i]);
-      //   }
-      // }
+    
 
       //token/split the input
       char *token = strtok(input," ");
